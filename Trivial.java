@@ -5,15 +5,107 @@ import java.util.Scanner;
 public class Trivial {
 
 	public static void main(String[] args) {
+		int contadorBloques = 0;
+		int contadorPreguntas = 0;
+		int opcionRespuesta;
 		Scanner sc = new Scanner (System.in);
-		
-		
-		
+		do {
+			switch (dadoTematica()) {
+				case 1:
+					System.out.println("DEPORTES");
+					switch (dadoCategoria()) {
+						case 1: 
+							System.out.println("FÚTBOL");
+							for (int i = 0; i<9; i++) {
+								System.out.println(bloqueFutbol(i));
+								opcionRespuesta = sc.nextInt();
+							}
+							break;
+						case 2:
+							System.out.println("BALONCESTO");
+							for (int i = 0; i<9; i++) {
+								System.out.println(bloqueBaloncesto(i));
+								opcionRespuesta = sc.nextInt();
+							}
+							break;
+							
+						case 3:
+							System.out.println("OLIMPIADAS");
+							for (int i = 0; i<9; i++) {
+								System.out.println(bloqueOlimpiadas(i));
+								opcionRespuesta = sc.nextInt();
+							}
+							break;
+					}
+					break;
+					
+				case 2:
+					System.out.println("HISTORIA");
+					switch (dadoCategoria()) {
+						case 1: 
+							
+							break;
+							
+						case 2:
+							
+							break;
+							
+						case 3:
+							
+							break;
+					}
+					break;
+				
+				case 3:
+					System.out.println("CULTURA");
+					switch (dadoCategoria()) {
+						case 1: 
+							System.out.println("CINE");
+							for (int i = 0; i<9; i++) {
+								System.out.println(bloqueCine(i));
+								opcionRespuesta = sc.nextInt();
+							}
+							break;
+							
+						case 2:
+							System.out.println("LITERATURA");
+							for (int i = 0; i<9; i++) {
+								System.out.println(bloqueLiteratura(i));
+								opcionRespuesta = sc.nextInt();
+							}
+							break;
+							
+						case 3:
+							System.out.println("GENERAL");
+							for (int i = 0; i<9; i++) {
+								System.out.println(bloqueGeneral(i));
+								opcionRespuesta = sc.nextInt();
+							}
+							break;
+					}
+					break;
+					
+				case 4:
+					switch (dadoCategoria()) {
+						case 1: 
+							
+							break;
+							
+						case 2:
+							
+							break;
+							
+						case 3:
+							
+							break;
+					}
+					break;
+			}
+				
+			
+		} while (contadorBloques > 4);
 		
 		sc.close();
-
-		
-		
 	}
 	
 	
