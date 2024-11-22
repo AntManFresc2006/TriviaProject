@@ -3,6 +3,7 @@ package trivial;
 import java.util.Scanner;
 
 public class Trivial {
+
 	public static void main(String[] args) {
 		int opcionRespuesta;
 		Scanner sc = new Scanner (System.in);
@@ -501,9 +502,9 @@ public class Trivial {
 		String cine [][] = new String [9][5];
 		cine[0][0] = "¿Cuál fue la primera película en ganar el Óscar a Mejor Película?";
 		cine[0][1] = "1. Titanic";
-		cine[0][1] = "2. Torrente 3";
-		cine[0][1] = "3. Alas";
-		cine[0][1] = "4. Star Wars";		
+		cine[0][2] = "2. Torrente 3";
+		cine[0][3] = "3. Alas";
+		cine[0][4] = "4. Star Wars";		
 		cine[1][0] = "¿Quién dirigió la trilogía de El Señor de los Anillos?";
 		cine[1][1] = "1. Tarantino";
 		cine[1][2] = "2. Almodóvar";
